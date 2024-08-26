@@ -9,7 +9,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class ModelAndViewWelcomeController {
 
     @RequestMapping("welcome")
-    public ModelAndView welcome3(@RequestParam("name") String myName) {
+    public ModelAndView welcome3(@RequestParam("name") String myName) {     //here name is the thing sent from url and in the program we are referring to that with "myName"
         ModelAndView mv = new ModelAndView();
         mv.addObject("name", myName);
         mv.setViewName("pages/welcome");
